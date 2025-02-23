@@ -1,0 +1,61 @@
+22:40PM - 22:50PM
+sse-ws-demo-754844df55-ps8zm
+600 50/s
+
+Failure rate: < 1%
+Max SSE Connections RPM: ~95 RPM
+Max update order RPM: ~5.52k RPM
+Max memory usage: 120MB
+
+---------
+
+22:53PM - 23:05PM
+sse-ws-demo-754844df55-wqb8g
+1000 100/s
+Failure rate: 27%
+
+Max SSE Connections RPM: ~285 RPM  Avg: 15s
+Max update order RPM: ~2.65k RPM AvgRes: 9.24 ms
+Max memory usage: ~230MB
+
+---------
+
+
+23:05PM - 23:13PM
+sse-ws-demo-754844df55-pjd27
+800 100/s
+
+Failure rate: ~ 1%
+Max SSE Connections RPM: ~268 RPM  Avg: 17s
+Max update order RPM: ~7.63k RPM AvgRes: 10.9 ms   	367/45424 fails/total
+Max memory usage: ~230MB
+
+---------
+
+23:25PM - 23:30PM
+sse-ws-demo-754844df55-m6kx2
+800 50/s
+
+Failure rate: ~ 1%
+Max SSE Connections RPM: ~175 RPM  Avg: 20.3s Max: ~90s
+Max memory usage: ~230MB
+
+----------
+
+23:35PM - 23:45PM(only sse)
+sse-ws-demo-754844df55-cz5bs
+600 50/s
+Failure rate: ~ 1%
+Max SSE Connections RPM: ~250 RPM  Avg: 7.59 s Max: ~74s
+Max memory usage: ~110MB
+
+
+
+
+Demo Specification(Safe):
+
+CPU: 200Mi
+Memory: 300Mi
+SSE RPM: 100RPM
+
+According to the current prod `/api/v3/cart/stats/ rpm (6k), it equals to 200 SSE RPM
